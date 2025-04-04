@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-item">ABDULAFEEZ</div>
+        <div class="navlinks">
+          <nav>
+            <ul>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <nav>
+          <div class="hamburger" id="hamburger">
+            &#9776;
+            <!-- Hamburger icon -->
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="left-column" id="about">
+            <h2>BIOGRAPHY</h2>
+            <p>
+              Hi, I'm a passionate Full-Stack Web Developer skilled in frontend
+              (React, Next.js, JavaScript, HTML, CSS, Tailwind) and backend
+              (Node.js, Express, MongoDB, SQL). I build responsive, dynamic UIs
+              and scalable server-side apps. Recently completed a full-stack
+              program, gaining hands-on experience in building and deploying web
+              apps. Proficient in VSCode, Git, and GitHub for efficient
+              collaboration and clean code.
+            </p>
+            <div class="desktop-button">
+              <a
+                href="https://wa.me/+2348163978187"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hire-me-button"
+                >Hire Me</a
+              >
+              <a
+                href="/assets/OSUNDUN ABDULAFEEZ OYEBOWALE.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hire-me-button"
+                >Download Cv</a
+              >
+            </div>
+          </div>
+
+          <div class="middle-column">
+            <img src="/assets/project-logo.jpg" alt="Profile Image" />
+          </div>
+
+          <div class="mob-button">
+            <a
+              href="https://wa.me/+2348163978187"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hire-me-button"
+              >Hire Me</a
+            >
+            <a
+              href="https://wa.me/+2348163978187"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hire-me-button"
+              >Download Cv</a
+            >
+          </div>
+
+          <div class="right-column" id="skills">
+            <h2>SKILLS</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>NextJs</li>
+              <li>NodeJs</li>
+              <li>EmailJs</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="awards-section" id="projects">
+      <!-- Title Section -->
+      <div class="title">
+        <h1>PRO<span>JECTS</span></h1>
+      </div>
+
+      <!-- Awards Container -->
+      <div class="awards-container">
+        <!-- Award Card 1 -->
+        <div class="award-card">
+          <div class="award-card">
+            <h2>HTML</h2>
+            <a
+              href="https://personal-portfolio1-iota.vercel.app/"
+              target="_blank"
+              >My HTML Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Award Card 2 -->
+        <div class="award-card">
+          <div class="award-card">
+            <h2>CSS</h2>
+            <a href="">My CSS Project</a>
+          </div>
+        </div>
+
+        <!-- Award Card 3 -->
+        <div class="award-card">
+          <div class="award-card">
+            <h2>JAVASCRIPT</h2>
+            <a href="">My JavaScript Project</a>
+          </div>
+        </div>
+
+        <!-- Award Card 4 -->
+        <div class="award-card">
+          <div class="award-card">
+            <h2>React</h2>
+            <a href="">My NextJs Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 class="contact">CONTACT ME</h2>
+      <form action="mailto:osundunafeez@gmail.com" method="post">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy 2025 Osundun AbdulAfeez. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

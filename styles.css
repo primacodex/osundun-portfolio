@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #ffd700;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: transparent;
+}
+
+.nav-item {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.navlinks nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navlinks nav ul li {
+  margin-right: 15px;
+}
+
+.navlinks a {
+  text-decoration: none;
+  border: 1px solid #ffd700;
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: #ffd700;
+  transition: background-color 0.3s;
+}
+
+.navlinks a:hover {
+  background-color: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 50px;
+  z-index: 1;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 20px;
+}
+
+.middle-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-column img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+p,
+ul,
+li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.hire-me-button {
+  border: 2px solid #ffd700;
+  padding: 8px 16px;
+  color: white;
+  background-color: #ffd700;
+}
+
+/* Main Section Styling */
+.awards-section {
+  padding: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+/* Title Styling */
+.title p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.title h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.title h1 span {
+  color: #1e40af; /* Blue color for 'JECTS' */
+}
+
+/* Awards Container */
+.awards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Award Card Styling */
+.award-card {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.05
+  ); /* Slightly transparent card background */
+  border-radius: 15px;
+  padding: 20px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.award-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Award Card Text */
+.award-card h2 {
+  color: #ffd700; /* Gold color for Award titles */
+  margin-bottom: 10px;
+}
+
+.award-card a {
+  text-decoration: none;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  text-align: center;
+}
+
+label,
+input,
+textarea,
+button {
+  margin: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ffd700;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 52%;
+}
+
+button:hover {
+  background-color: #ffd700;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: #ffd700;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: #ffd700;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    /* position: absolute; */
+    top: 60px; /* Adjust based on your nav height */
+    left: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .content {
+    display: block;
+    justify-items: center;
+    text-align: justify;
+  }
+  .desktop-button {
+    display: none;
+  }
+  .awards-container {
+    display: block;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #skills {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .mob-button {
+    display: none;
+  }
+}
