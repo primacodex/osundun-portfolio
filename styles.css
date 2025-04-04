@@ -281,6 +281,10 @@ footer {
   #skills {
     display: none;
   }
+
+  .mob-button {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
