@@ -213,6 +213,10 @@ footer {
   color: white;
 }
 
+nav {
+  position: relative;
+}
+
 .hamburger {
   display: none;
   font-size: 30px;
@@ -252,7 +256,6 @@ footer {
   .nav-links {
     display: none;
     flex-direction: column;
-    position: absolute;
     top: 60px; /* Adjust based on your nav height */
     left: 0;
     border: 2px solid #ffd700;
@@ -289,7 +292,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
   .nav-links {
     display: none;
   }
